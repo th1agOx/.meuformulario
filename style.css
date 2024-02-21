@@ -1,0 +1,90 @@
+body {
+    font-family: "Poppins", sans-serif;
+
+    background: #E5E5E5;
+}
+
+header h1 {
+    font-family: "Archivo", sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #ffffff;
+    
+}
+
+header p {
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #42D3FF;
+    
+}
+
+.page {
+    width: 736px;
+    margin: auto;
+}
+
+header{
+    width: 319px;
+    margin: 80px 0 42px;
+}
+
+body::before {
+    content: '';
+    width: 100%;            /*largura de 100% da página*/ 
+    height: 368px;
+
+    display: block;
+    position: absolute;     /*fica a cima dos elementos*/
+    top: 0;                 
+    left: 0;
+    z-index: -1;
+
+    background: #121214;
+}
+
+form {
+    background: #FAFAFC;
+
+    border-radius: 8px;
+    min-height: 368px;
+
+    padding: 64px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+
+    border-bottom: 1px solid #e6e6f0 ;
+    padding-bottom: 12px;
+
+    width: 100%;
+}
+
+
+
+
+
+
+
+/*
+    SUDOCLASS BEFORE E AFTER :
+    cria um elemento antes, ou depois do conteudo adcionado ; 
+    content obrigatoriamente vem acompanhado dessa sudoclass ;
+    esse elemento é adcionado no html pelo css, ou seja, todos os elementos precisam
+    ser setados, inclusive o tipo de display ;
+    as margins são adcionadas diretamento :
+    com o top também servindo para o bottom, e o 
+    left servindo para os lados 
+    * z-index é um elemento de terceira dimensão, eixo y ( cima baixo ), eixo x ( lados ) 
+    eixo z ( dimensões )
+*/
