@@ -35,7 +35,41 @@
 
             <fieldset>
                 <legend>Infomações do Evento</legend>
+
+                <div class="input-wrapper">          <!--caixa de cobertura-->
+
+                    <label for="event-title">        <!-- for-> html-->
+                        Título do evento <span>(mínimo 8 caracteres)</span> 
+                    </label>
+                    <input type="text" name="event-title" id="event-title"/>
+                </div>
+
+                <div class="input-wrapper">  
+
+                    <label for="event-link">
+                        Link do evento <span>(comece com https://)</span>
+                    </label>
+                    <input type="url" name="event-link" id="event-link">
+                </div>
+
+                <div class="input-wrapper">
+
+                    <label for="event-wpp">
+                        Whatsapp para contato <span>(somente números)</span>
+                    </label>
+                    <input type="number" name="event-wpp" id="event-wpp">
+                </div>
+
+                <div class="input-wrapper">
+
+                    <label for="event-description">
+                        Informações  extras 
+                    </label>
+                    <textarea name="event-description" id="event-description"></textarea>
+                </div>
+                   
             </fieldset>
+
 
         </form>
 
@@ -48,4 +82,6 @@
 
 <!--
     fieldset é um conjunto de campos, seguido pela tag legenda 
+
+    input tem o display inline-block
 -->
