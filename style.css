@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-body, input, button, select, textarea {
+body, input, select, textarea {
     font-family: "Poppins", sans-serif;
 }
 
@@ -58,8 +58,8 @@ body::before {
 form {
     background: #FAFAFC;
 
-    border-radius: 8px;
-    min-height: 1566px;
+    border-radius: 8px 8px 0 0 ;
+    min-height: 366px;
 
     padding: 64px;
 
@@ -199,6 +199,48 @@ fieldset legend {
 }
 
 
+footer {
+    background: #F0F0F4;
+
+    height: 136px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 64px;
+    margin-bottom: 94px;
+
+    border-radius: 0 0 8px 8px;
+    border-top: 1px solid #D6D6D6;
+
+    margin-top: 3px;
+}
+
+footer .button {
+    height: 56px;
+
+    border: 0;
+    background: #04D361;
+    border-radius: 8px;
+
+    line-height: 26px;
+    font-size: 16px;
+
+    color: #FFFFFF;
+}
+
+footer .button:hover {      
+    background: #06ba57;
+}
+
+input:invalid {
+    border: 1px solid #FF1010;
+}
+
+
+
+
+
 
 /*
     SUDOCLASS BEFORE E AFTER :
@@ -222,4 +264,6 @@ fieldset legend {
     base64 -> traduz o formato de texto em imagem 
 
     out-line é a borda já selecionada
+
+    sudoclass + : = comportamento
 */
